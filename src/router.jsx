@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 
 //前台
 import FrontendLayout from "./layout/FrontendLayout";
@@ -16,7 +16,7 @@ import AdminProducts from "./pages/admin/AdminProducts";
 //找不到
 import NotFound from "./pages/WebsiteFrontEnd/NotFound";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: "/",
         element: <FrontendLayout />,
